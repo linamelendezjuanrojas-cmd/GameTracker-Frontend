@@ -19,7 +19,6 @@ export default function TarjetaJuego({ juego, onEliminar, onActualizar }) {
 
   return (
     <div className="tarjeta-juego">
-      {/* PORTADA */}
       <div className="tarjeta-portada">
         <img
           src={juego.portada || 'https://via.placeholder.com/300x400?text=Sin+Portada'}
@@ -33,7 +32,6 @@ export default function TarjetaJuego({ juego, onEliminar, onActualizar }) {
         )}
       </div>
 
-      {/* CONTENIDO */}
       <div className="tarjeta-contenido">
         <h3 className="tarjeta-titulo">{juego.titulo}</h3>
 
@@ -52,22 +50,18 @@ export default function TarjetaJuego({ juego, onEliminar, onActualizar }) {
           </div>
         </div>
 
-        {/* PUNTUACIÓN */}
         {juego.puntuacion > 0 && (
           <div className="tarjeta-puntuacion">
             {renderStars(juego.puntuacion)}
             <span className="puntuacion-texto">{juego.puntuacion}/5</span>
           </div>
         )}
-
-        {/* HORAS */}
         {juego.horasJugadas > 0 && (
           <div className="tarjeta-horas">
             ⏱️ {juego.horasJugadas} horas
           </div>
         )}
 
-        {/* BOTONES */}
         <div className="tarjeta-botones">
           <button
             onClick={handleToggleCompletado}

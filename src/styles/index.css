@@ -12,7 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-/* SCROLL PERSONALIZADO */
 ::-webkit-scrollbar {
   width: 10px;
 }

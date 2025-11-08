@@ -18,7 +18,6 @@
   transform: translateY(-4px);
 }
 
-/* PORTADA */
 .tarjeta-portada {
   position: relative;
   width: 100%;
@@ -61,7 +60,6 @@
   50% { transform: scale(1.05); }
 }
 
-/* CONTENIDO */
 .tarjeta-contenido {
   padding: 16px;
   flex: 1;
@@ -111,7 +109,6 @@
   width: fit-content;
 }
 
-/* PUNTUACIÓN */
 .tarjeta-puntuacion {
   display: flex;
   gap: 4px;
@@ -133,14 +130,12 @@
   margin-left: 4px;
 }
 
-/* HORAS */
 .tarjeta-horas {
   font-size: 13px;
   color: #c084fc;
   margin-bottom: 12px;
 }
 
-/* BOTONES */
 .tarjeta-botones {
   display: flex;
   flex-direction: column;

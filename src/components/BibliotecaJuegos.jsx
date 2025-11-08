@@ -86,7 +86,6 @@ export default function BibliotecaJuegos() {
 
   return (
     <div className="biblioteca-container">
-      {/* HEADER */}
       <header className="header">
         <div className="header-content">
           <div className="header-title">
@@ -97,7 +96,6 @@ export default function BibliotecaJuegos() {
             </div>
           </div>
 
-          {/* BÚSQUEDA */}
           <div className="search-bar">
             <input
               type="text"
@@ -114,7 +112,6 @@ export default function BibliotecaJuegos() {
             </button>
           </div>
 
-          {/* FILTROS */}
           <div className="filtros">
             {['todos', 'completados', 'pendientes'].map(opt => (
               <button
@@ -129,9 +126,7 @@ export default function BibliotecaJuegos() {
         </div>
       </header>
 
-      {/* MAIN */}
       <main className="main-content">
-        {/* FORMULARIO */}
         {mostrarForm && (
           <div className="form-section">
             <FormularioJuego 
@@ -141,7 +136,6 @@ export default function BibliotecaJuegos() {
           </div>
         )}
 
-        {/* GRID */}
         {cargando ? (
           <div className="no-juegos">
             <div className="no-juegos-emoji">🎮</div>
@@ -165,7 +159,6 @@ export default function BibliotecaJuegos() {
           </div>
         )}
 
-        {/* ESTADÍSTICAS */}
         <div className="stats-grid">
           <div className="stat-card">
             <div className="stat-header">
