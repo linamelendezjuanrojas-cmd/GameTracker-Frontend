@@ -1,0 +1,205 @@
+
+.tarjeta-juego {
+  background: linear-gradient(to bottom, #1e1b4b, #0f172a);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-juego:hover {
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 8px 30px rgba(168, 85, 247, 0.3);
+  transform: translateY(-4px);
+}
+
+/* PORTADA */
+.tarjeta-portada {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  overflow: hidden;
+}
+
+.tarjeta-portada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-juego:hover .tarjeta-portada img {
+  transform: scale(1.1);
+}
+
+.badge-completado {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #10b981;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border: 2px solid #34d399;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* CONTENIDO */
+.tarjeta-contenido {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-titulo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #e0e7ff;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 54px;
+}
+
+.tarjeta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #999;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-item span:first-child {
+  font-size: 16px;
+}
+
+.genero-badge {
+  display: inline-block;
+  background: rgba(168, 85, 247, 0.2);
+  color: #c084fc;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  width: fit-content;
+}
+
+/* PUNTUACIÓN */
+.tarjeta-puntuacion {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(168, 85, 247, 0.1);
+}
+
+.estrella {
+  font-size: 16px;
+  color: #fbbf24;
+}
+
+.puntuacion-texto {
+  font-size: 13px;
+  color: #fcd34d;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+/* HORAS */
+.tarjeta-horas {
+  font-size: 13px;
+  color: #c084fc;
+  margin-bottom: 12px;
+}
+
+/* BOTONES */
+.tarjeta-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.btn-tarjeta {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 13px;
+  text-align: center;
+}
+
+.btn-completado {
+  background: rgba(16, 185, 129, 0.2);
+  color: #86efac;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.btn-completado:hover {
+  background: rgba(16, 185, 129, 0.3);
+}
+
+.btn-completado.activo {
+  background: #10b981;
+  color: white;
+}
+
+.btn-opciones {
+  background: rgba(51, 65, 85, 0.5);
+  color: #cbd5e1;
+  border: 1px solid rgba(100, 116, 139, 0.3);
+}
+
+.btn-opciones:hover {
+  background: rgba(100, 116, 139, 0.3);
+}
+
+.btn-eliminar {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.btn-eliminar:hover {
+  background: rgba(239, 68, 68, 0.3);
+}
+
+.btn-cerrar {
+  background: rgba(51, 65, 85, 0.5);
+  color: #cbd5e1;
+  border: 1px solid rgba(100, 116, 139, 0.3);
+}
+
+.btn-cerrar:hover {
+  background: rgba(100, 116, 139, 0.3);
+}
