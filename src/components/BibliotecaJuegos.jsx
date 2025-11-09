@@ -92,7 +92,7 @@ export default function BibliotecaJuegos() {
             <span>🎮</span>
             <div>
               <h1>GameTracker</h1>
-              <p className="header-subtitle">Gestiona tu biblioteca de videojuegos</p>
+              <p className="header-subtitle">Tu biblioteca de videojuegos</p>
             </div>
           </div>
 
@@ -119,7 +119,7 @@ export default function BibliotecaJuegos() {
                 onClick={() => setFiltro(opt)}
                 className={`btn-filtro ${filtro === opt ? 'activo' : ''}`}
               >
-                {opt === 'todos' ? '🎮 Todos' : opt === 'completados' ? '✅ Completados' : '⏳ Pendientes'}
+                {opt === 'todos' ? ' Todos' : opt === 'completados' ? ' Completados' : ' Pendientes'}
               </button>
             ))}
           </div>

@@ -79,7 +79,7 @@ export default function FormularioJuego({ onGuardar, onCancelar }) {
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <div className="form-field">
-            <label className="form-label">📝 Título *</label>
+            <label className="form-label">Título *</label>
             <input
               type="text"
               name="titulo"
@@ -92,7 +92,7 @@ export default function FormularioJuego({ onGuardar, onCancelar }) {
           </div>
 
           <div className="form-field">
-            <label className="form-label">📱 Plataforma</label>
+            <label className="form-label"> Plataforma</label>
             <select
               name="plataforma"
               value={formData.plataforma}
@@ -108,7 +108,7 @@ export default function FormularioJuego({ onGuardar, onCancelar }) {
 
         <div className="form-group">
           <div className="form-field">
-            <label className="form-label">📅 Año</label>
+            <label className="form-label"> Año</label>
             <input
               type="number"
               name="año"
@@ -121,7 +121,7 @@ export default function FormularioJuego({ onGuardar, onCancelar }) {
           </div>
 
           <div className="form-field">
-            <label className="form-label">🎯 Género *</label>
+            <label className="form-label"> Género *</label>
             <select
               name="genero"
               value={formData.genero}
@@ -138,7 +138,7 @@ export default function FormularioJuego({ onGuardar, onCancelar }) {
 
         <div className="form-group">
           <div className="form-field">
-            <label className="form-label">⏱️ Horas Jugadas</label>
+            <label className="form-label"> Horas Jugadas</label>
             <input
               type="number"
               name="horasJugadas"
@@ -167,7 +167,7 @@ export default function FormularioJuego({ onGuardar, onCancelar }) {
 
         <div className="form-group">
           <div className="form-field">
-            <label className="form-label">🖼️ URL de Portada</label>
+            <label className="form-label"> URL de Portada</label>
             <input
               type="url"
               name="portada"
@@ -181,7 +181,7 @@ export default function FormularioJuego({ onGuardar, onCancelar }) {
 
         <div className="form-group">
           <div className="form-field">
-            <label className="form-label">📋 Descripción</label>
+            <label className="form-label"> Descripción</label>
             <textarea
               name="descripcion"
               value={formData.descripcion}
@@ -198,7 +198,7 @@ export default function FormularioJuego({ onGuardar, onCancelar }) {
             disabled={cargando}
             className="btn-guardar"
           >
-            💾 {cargando ? 'Guardando...' : 'Guardar Juego'}
+            {cargando ? 'Guardando...' : 'Guardar Juego'}
           </button>
 
           <button
