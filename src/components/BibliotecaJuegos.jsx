@@ -91,7 +91,7 @@ export default function BibliotecaJuegos() {
           <div className="header-title">
             <span>🎮</span>
             <div>
-              <h1>GameTracker</h1>
+              <h1>GamerTracker</h1>
               <p className="header-subtitle">Tu biblioteca de videojuegos</p>
             </div>
           </div>

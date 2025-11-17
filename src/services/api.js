@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5001/api'
-});
+  baseURL: 'https://gametracker-backend-30o5.onrender.com/api'
+});;
 
 export const obtenerJuegos = () => API.get('/juegos');
 export const crearJuego = (data) => API.post('/juegos', data);
